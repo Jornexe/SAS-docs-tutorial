@@ -1500,47 +1500,6 @@
               </p>
               <pre class="card-text p-3">
                 <code>
-                PROC TABULATE DATA=mydata;
-                    VAR var1 var2;
-                    CLASS classvar1 classvar2;
-                    TABLE classvar1, classvar2*var1*(mean var2);
-                RUN;
-                </code>
-                </pre>
-              <p class="card-text">
-                In this example, <code>PROC TABULATE</code> is used to summarize
-                the variables <code>var1</code> and <code>var2</code> by the
-                variables <code>classvar1</code> and <code>classvar2</code>. The
-                resulting table displays the means of <code>var1</code> and
-                <code>var2</code> for each combination of
-                <code>classvar1</code> and <code>classvar2</code>.
-              </p>
-            </div>
-          </div>
-
-          <!-- PROC TABULATE -->
-          <div class="card mt-4" id="proc-tabulate">
-            <div class="card-body">
-              <h5 class="card-title">PROC TABULATE</h5>
-              <p class="card-text">
-                <code>PROC TABULATE</code> is a SAS procedure used for creating
-                customized tables of summary statistics and/or counts. It is a
-                powerful tool for data exploration, analysis, and presentation.
-              </p>
-              <p class="card-text">
-                The <code>PROC TABULATE</code> procedure summarizes data in a
-                tabular format and allows you to control the format, layout, and
-                content of the resulting tables. You can specify one or more
-                variables to summarize, and one or more variables to group by.
-                You can also use <code>PROC TABULATE</code> to generate tables
-                with multiple levels of aggregation, such as subtotals and grand
-                totals.
-              </p>
-              <p class="card-text">
-                Here is an example of <code>PROC TABULATE</code> code:
-              </p>
-              <pre class="card-text p-3">
-                <code>
                 /* Example data */
                 data mydata;
                     input gender $ age height weight;
